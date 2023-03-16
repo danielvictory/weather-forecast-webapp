@@ -8,10 +8,22 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script defer src="js/app.js"></script>
 </head>
 <body>
-    <h1 id='title'>What's the weather there?</h1>
+    <h1 id='title'>What's the weather out there?</h1>
+
+    <form id="input form">
+        <input id='user-input' type='text' placeholder='Where ya wanna know about?' onclick=this.select()>
+        <input id='submit' type='submit' value='Get Forecast'>
+    </form>
+
+    <main>
+        <section>
+            <p>Temperature:</p>
+        </section>
+    </main>
     
 </body>
 </html>
